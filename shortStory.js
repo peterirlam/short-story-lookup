@@ -27,3 +27,5 @@ function updateStories(libClass, prop, value) {
 	}
 	return shortStories;
 }
+let update = updateStories('SF659', 'favorites', 'We Remember It For You, Wholesale');
+console.log(update);
