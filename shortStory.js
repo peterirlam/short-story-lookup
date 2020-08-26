@@ -17,3 +17,6 @@ let shortStories = {
 		title: 'I, Robot'
 	}
 };
+function updateStories(libClass, prop, value) {
+
+}
