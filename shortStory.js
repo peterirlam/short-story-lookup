@@ -18,5 +18,5 @@ let shortStories = {
 	}
 };
 function updateStories(libClass, prop, value) {
-
+if (value === '') delete shortStories[libClass][prop];
 }
