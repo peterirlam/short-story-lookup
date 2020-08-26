@@ -22,5 +22,8 @@ function updateStories(libClass, prop, value) {
    else if (prop === 'favorites') {
     shortStories[libClass][prop] = shortStories[libClass][prop] || [];
     shortStories[libClass][prop].push(value);
-}
+  } else {
+		shortStories[libClass][prop] = value;
+	}
+	return shortStories;
 }
