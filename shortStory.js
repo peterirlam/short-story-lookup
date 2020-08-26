@@ -18,5 +18,9 @@ let shortStories = {
 	}
 };
 function updateStories(libClass, prop, value) {
-if (value === '') delete shortStories[libClass][prop];
+  if (value === '') delete shortStories[libClass][prop];
+   else if (prop === 'favorites') {
+    shortStories[libClass][prop] = shortStories[libClass][prop] || [];
+    shortStories[libClass][prop].push(value);
+}
 }
